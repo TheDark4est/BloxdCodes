@@ -1,6 +1,6 @@
 # 昼夜变换
 ```
-const DAY_NIGHT_CYCLE_MS = 50000*1000;
+const DAY_NIGHT_CYCLE_MS = 50000*1000; // [1]
 let cycleStartTime = Date.now();
 const SKYBOX_DAY = {
   type:"earth",
@@ -22,3 +22,8 @@ function setDynamicSkybox(darkness){const currentSkybox={type:"earth",inclinatio
 for(const playerId of api.getPlayerIds()){api.setClientOption(playerId,"skyBox",currentSkybox);}}
 function lerp(start,end,t){return start+(end-start)*t;}
 ```
+### 说明:
+
+复制到服务器之后，能够添加昼夜变换的效果。
+
+[1]的数字和昼夜周期正相关，50000*1000是一个比较正常的昼夜周期
