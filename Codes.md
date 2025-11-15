@@ -1,4 +1,7 @@
 # 昼夜变换
+
+> 现在疑似不能用了XD
+> 
 ```
 const DAY_NIGHT_CYCLE_MS = 50000*1000; // [1]
 let cycleStartTime = Date.now();
